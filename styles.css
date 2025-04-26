@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 body, html {
@@ -12,15 +13,14 @@ body, html {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
 }
 
 nav {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     top: 0;
@@ -32,6 +32,7 @@ nav {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     border-radius: 0 0 20px 20px;
     overflow: hidden;
+    transition: top 0.5s ease;
 }
 
 nav ul {
@@ -64,11 +65,10 @@ nav ul li a:hover::after {
 
 header {
     height: 100vh;
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)),
-    url('https://cdn.discordapp.com/attachments/1365594231686828142/1365605158272241674/bg.jpg.png?ex=680dea69&is=680c98e9&hm=aff271df7d8574665418a689932aa1974edbbcb70e448666d8996a52c9977caa&') no-repeat center center / cover;
+    background:url('images/31.gif') no-repeat center center / cover;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
-    /* border-radius: 20px 20px 50px 50px; */
+    border-radius: 20px 20px 50px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,15 +79,19 @@ header {
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 800;
     color: #fff;
     text-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #f0f0f0;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #about, #portfolio, #contact {
@@ -96,8 +100,8 @@ header {
 
 #about {
     background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     padding: 6rem 2rem;
     border-radius: 30px;
     margin: 5rem auto;
@@ -124,13 +128,21 @@ header {
 }
 
 .about-text h2 {
-    font-size: 2.5rem;
-}
-
-.about-text h2, .about-text p {
+    font-size: 3rem;
+    font-family: "Lobster", sans-serif;
+    font-weight: 800;
+    font-style: normal;
     color: #333;
     text-align: center;
-    font-weight: bold;
+}
+
+.about-text p {
+    color: #333;
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .modal {
@@ -181,12 +193,13 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 0 1rem;
+    margin-bottom: 5rem;
 }
 
 .portfolio-item {
     background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
@@ -222,7 +235,9 @@ header {
 #portfolio h2 {
     text-align: center;
     font-size: 3rem;
-    font-weight: bold;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #222;
     letter-spacing: 1px;
     margin-bottom: 2rem;
@@ -232,23 +247,34 @@ header {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+#contact {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6rem 2rem 4rem 2rem;
+}
 #contact h2 {
     text-align: center;
     font-size: 3rem;
-    font-weight: bold;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #222;
     letter-spacing: 1px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .contact-form {
     background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(13px);
+    backdrop-filter: blur(15px);
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 20px;
     padding: 3rem;
     box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-    max-width: 600px;
-    margin: auto;
+    max-width: 700px;
+    width: 90%; 
+    margin: 0 auto;
 }
 
 input, textarea {
@@ -261,6 +287,7 @@ input, textarea {
     font-size: 1rem;
     color: #222;
     backdrop-filter: blur(5px);
+    max-width: 100%;
 }
 
 input::placeholder, textarea::placeholder {
@@ -329,9 +356,13 @@ nav, header, section, footer, .wave {
     overflow-x: hidden;
 }
 
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
+    }
+    .hero-content p {
+        font-size: 1.5rem;
     }
     .about-wrapper {
         flex-direction: column;
@@ -377,4 +408,73 @@ nav, header, section, footer, .wave {
         padding: 0.4rem;
         white-space: nowrap;
     }
+}
+
+.contact-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-option {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-option img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-option span {
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-option small {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.contact-toggle {
+    background: red;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.contact-floating.hide .contact-option {
+    display: none;
+}
+
+.contact-option:hover {
+    transform: scale(1.05);
+    background: #f0f8ff;
+}
+.contact-option {
+    text-decoration: none;
+    color: inherit;
+}
+.contact-option span {
+    text-decoration: none;
 }
