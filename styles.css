@@ -19,8 +19,8 @@ body, html {
 
 nav {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     position: fixed;
     width: 100%;
     top: 0;
@@ -96,8 +96,8 @@ header {
 
 #about {
     background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 6rem 2rem;
     border-radius: 30px;
     margin: 5rem auto;
@@ -185,8 +185,8 @@ header {
 
 .portfolio-item {
     background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
@@ -242,7 +242,7 @@ header {
 }
 .contact-form {
     background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(13px);
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 20px;
     padding: 3rem;
