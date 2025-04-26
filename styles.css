@@ -329,11 +329,6 @@ nav, header, section, footer, .wave {
     overflow-x: hidden;
 }
 
-/* html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-} */
-
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
@@ -382,66 +377,4 @@ nav, header, section, footer, .wave {
         padding: 0.4rem;
         white-space: nowrap;
     }
-
-    /* nav {
-        width: 100%;
-        max-width: 100%;
-        left: 0;
-        transform: none;
-        padding: 0.5rem 1rem;
-        border-radius: 0 0 20px 20px;
-    }
-
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem 1rem;
-        padding: 0;
-    }
-
-    nav ul li {
-        flex: 1 1 40%;
-        text-align: center;
-    }
-
-    nav ul li a {
-        font-size: 0.85rem;
-        padding: 0.3rem;
-        white-space: nowrap;
-    }
-
-    header {
-        padding: 3rem 1rem;
-    }
-
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-        margin-top: 0.5rem;
-    }
-
-    #about {
-        padding: 4rem 1.5rem;
-        margin-top: 10rem;
-    }
-
-    .about-text h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .about-text p {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 0.8rem;
-    }
-
-    .about-image img {
-        width: 160px;
-        height: 160px;
-    } */
 }
