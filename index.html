@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEROS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#about">Giới Thiệu</a></li>
+            <li><a href="#portfolio">Sản Phẩm</a></li>
+            <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>I'm ZEROS</h1>
+            <p>"Thiết kế không chỉ để đẹp, mà để sống."</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="about-wrapper">
+            <div class="about-image" data-aos="fade-right">
+                <img src="https://i.imgur.com/aOMlGQ1.jpg" alt="Profile">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h2>Giới Thiệu</h2>
+                <p>🎨 Tôi là một designer đam mê sáng tạo, luôn tìm kiếm sự cân bằng giữa cái đẹp và công năng.</p>
+                <p>🌟 Với mỗi dự án, tôi đặt trái tim vào từng chi tiết nhỏ, để thổi hồn vào sản phẩm và tạo ra cảm xúc chạm tới người xem.</p>
+                <p>🚀 Đối với tôi, thiết kế không chỉ đơn thuần là hình ảnh — đó là câu chuyện, là trải nghiệm.</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="wave" style="overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100px; width: 100%;">
+          <path d="M0.00,49.98 C150.00,150.00 350.00,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+        </svg>
+    </div>
+
+    <section id="portfolio">
+        <h2 data-aos="fade-up">Sản Phẩm</h2>
+        <div class="portfolio-grid">
+            
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="https://i.imgur.com/UEhXbBb.png" alt="Project 1" onclick="openModal(this.src)">
+                <h3>BANNER</h3>
+                <p>Brand ROASTORY</p>
+            </div>
+            
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="https://i.imgur.com/ACAHsWo.png" alt="Project 2" onclick="openModal(this.src)">
+                <h3>LOGO</h3>
+                <p>Logo Server VN CHILL</p>
+            </div>
+            
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="https://i.imgur.com/QF3EcDI.png" alt="Project 3" onclick="openModal(this.src)">
+                <h3>LOGO</h3>
+                <p>Logo Server SHARKEN</p>
+            </div>
+            
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="https://i.imgur.com/OVZTUbc.png" alt="Project 4" onclick="openModal(this.src)">
+                <h3>LOGO</h3>
+                <p>Logo Police</p>
+            </div>
+            
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="https://i.imgur.com/T3LtFIg.png" alt="Project 5" onclick="openModal(this.src)">
+                <h3>LOGO</h3>
+                <p>Logo HospitalL</p>
+            </div>
+            
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="https://i.imgur.com/kdrMFF0.png" alt="Project 6" onclick="openModal(this.src)">
+                <h3>LOGO</h3>
+                <p>Logo Cardealer</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="wave" style="overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100px; width: 100%;">
+          <path d="M0,0V46.29c47.6,22,98.12,29.24,146.14,17,48-12.11,90.46-35.91,138.49-39.23,42.6-2.84,83.16,11.06,124,27,40,15.61,82,31.86,123,25,43.28-7.2,81-35,126-38.5,38-3,74,17,112,31s80,14,120,0V0Z" style="stroke: none; fill: #ffffff;"></path>
+        </svg>
+    </div>
+
+    <section id="contact">
+        <h2 data-aos="fade-up">Liên Hệ</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)" data-aos="fade-up">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email của bạn" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder="Tin nhắn của bạn" required></textarea>
+            </div>
+            <button type="submit">Gửi Tin Nhắn</button>
+        </form>
+    </section>
+
+    <div class="wave" style="overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100px; width: 100%;">
+          <path d="M0.00,49.98 C150.00,150.00 350.00,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path>
+        </svg>
+    </div>
+
+    <footer>
+        <p>© 2025 DESIGN BY ZEROS</p>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+    
+        function openModal(src) {
+            modal.classList.add("active");
+            modalImg.src = src;
+        }
+    
+        function closeModal() {
+            modal.classList.remove("active");
+        }
+    
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
