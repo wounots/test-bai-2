@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZEROS</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
@@ -116,6 +118,27 @@
         </svg>
     </div>
 
+    <div class="contact-floating">
+        <a class="contact-option" href="https://zalo.me/0363999666" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+            <span>Chat Zalo</span>
+            <small>(8h-24h)</small>
+        </a>
+        <a class="contact-option" href="https://m.me/yourfacebookid" target="_blank">
+            <img src="images/mess.png" alt="Messenger">
+            <span>Chat Facebook</span>
+            <small>(8h-24h)</small>
+        </a>
+        <a class="contact-option" href="tel:0363999666">
+            <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone" style="width: 24px;">
+            <span>Gọi 0363999666</span>
+            <small>(8h-24h)</small>
+        </a>
+        <div class="contact-toggle" onclick="toggleContact()">
+            <span>▲</span>
+        </div>
+    </div>
+
     <footer>
         <p>© 2025 DESIGN BY ZEROS</p>
     </footer>
@@ -146,6 +169,26 @@
                 closeModal();
             }
         }
+    </script>
+    <script>
+        function toggleContact() {
+            document.querySelector('.contact-floating').classList.toggle('hide');
+        }
+    </script>
+
+    <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('nav');
+    
+    window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top = "-80px"; 
+        } else {
+            navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }, false);
     </script>
 </body>
 </html>
