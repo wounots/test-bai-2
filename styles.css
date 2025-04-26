@@ -1,9 +1,9 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-} */
+}
 
 body, html {
     background: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%);
@@ -11,8 +11,6 @@ body, html {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
@@ -182,6 +180,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
+    padding: 0 1rem;
 }
 
 .portfolio-item {
@@ -203,7 +202,7 @@ header {
 }
 
 .portfolio-item img {
-    width: 90%;
+    width: 100%;
     margin-bottom: 1rem;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
